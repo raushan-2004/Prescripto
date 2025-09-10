@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 
 
 
+
 export const AdminContext = createContext()
 
 
@@ -18,7 +19,7 @@ const AdminContextProvider = (props) => {
 
 
 
-    const backendUrl = 'https://dr-home.onrender.com/' 
+    const backendUrl = Process.env.VITE_BACKEND_URL; 
 
     const getAllDoctors = async () => {
         try {

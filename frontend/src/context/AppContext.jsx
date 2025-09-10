@@ -8,7 +8,7 @@ const AppContextProvider = (props) => {
 
 
     const currencySymbol = "$";
-    const backendUrl = 'https://dr-home.onrender.com/';
+    const backendUrl = process.env.VITE_BACKEND_URL;
 
 
     const [doctors, setDoctors] = useState([]);
